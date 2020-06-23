@@ -1,0 +1,27 @@
+{{ $pathname := $.Page.Permalink | relURL | lower }}
+
+<section id="nav-wrapper">
+  <nav>
+    <div class="menu">
+      {{ if (eq $pathname "/")}}
+      <a href="/" class="active">Home</a>
+      {{ else }}
+      <a href="/">Home</a>
+      {{ end }}
+      <!--  -->
+
+      {{ range (where $.Site.RegularPages "Section" "pages") }}
+      <!--  -->
+      {{ $pagepath := print "/" .Title "/" | lower }}
+      <!--  -->
+      <!--  -->
+      {{ if (eq $pathname $pagepath )}}
+      <a href="{{ .Permalink }}" class="active">{{ .Title }}</a>
+      {{ else }}
+      <a href="{{ .Permalink }}">{{ .Title }}</a>
+      {{ end }}
+      <!--  -->
+      {{ end }}
+    </div>
+  </nav>
+</section>

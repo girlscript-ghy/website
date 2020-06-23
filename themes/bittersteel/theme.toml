@@ -1,0 +1,21 @@
+# theme.toml template for a Hugo theme
+# See https://github.com/gohugoio/hugoThemes#themetoml for an example
+
+name = "BitterSteel"
+license = "GPL-3.0"
+licenselink = ""
+description = "theme for official GirlScript Guwahati Website"
+homepage = ""
+tags = []
+features = []
+min_version = "0.41.0"
+
+[author]
+  name = "GirlScript Guwahati Contributors"
+  homepage = "https://github.com/girlscript-ghy"
+
+# If porting an existing theme
+[original]
+  name = ""
+  homepage = ""
+  repo = ""
