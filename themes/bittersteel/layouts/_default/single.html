@@ -1,76 +1,8 @@
 {{ define "main" }}
 
-<div id="wrapper">
-    <main id="layout_page">
-        <h1 class="title">
-            {{ .Title }}
-        </h1>
-
-        {{ if (isset .Params "date") }}
-
-        <time>
-            {{ .Date.Format "2 January, 2006" }}
-            &nbsp;&middot;&nbsp;
-            <!-- -->
-            {{ .ReadingTime }} min
-        </time>
-
-        {{ else }}
-
-        <div style="margin-bottom: 2rem;"></div>
-
-        {{ end }}
-        <!--c-->
-        {{ .Content }}
-
-        <div id="tags">
-            {{ range .Params.tags }}
-            <small>
-                <a
-                    style="text-decoration: none;color: blue;border: none;"
-                    href="{{ $.Site.Params.baseURL | absURL }}/tags/{{ . }}"
-                    >#{{ . }}</a
-                >
-            </small>
-            {{ end }}
-        </div>
-
-        {{ if and (gt .WordCount 200 ) (.Params.tableofcontents) }}
-        <label id="mobile-only-toc-handler">Table of Content</label>
-        {{ end }}
-        <!-- -->
-
-        {{ if or .PrevInSection .NextInSection }}
-
-        <div
-            style="
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                text-align: center;
-                text-transform: uppercase;
-            "
-        >
-            {{ if .NextInSection }}
-            <a href="{{ .NextInSection.Permalink }}">
-                {{ .NextInSection.Title }}
-            </a>
-
-            {{ end }}
-
-            <!-- -->
-
-            {{ if .PrevInSection }}
-            <a href="{{ .PrevInSection.Permalink }}">
-                {{ .PrevInSection.Title }}
-            </a>
-            {{ end }}
-        </div>
-
-        {{ end }}
-    </main>
-
+<div id="layout-wrapper">
+    <h1 class="title">{{ .Title }}</h1>
     <!-- -->
-
     {{ if and (gt .WordCount 100 ) (.Params.tableofcontents) }}
     <aside id="aside-table-of-content">
         <strong><small>IN THIS PAGE</small></strong>
@@ -120,6 +52,67 @@
             })();
         </script>
     </aside>
+    <main id="layout_page">
+        {{ if (isset .Params "date") }}
+
+        <time>
+            {{ .Date.Format "2 January, 2006" }} &nbsp;&middot;&nbsp;
+            <!-- -->
+            {{ .ReadingTime }} min
+        </time>
+
+        {{ else }}
+
+        <div style="margin-bottom: 2rem;"></div>
+
+        {{ end }}
+        <!--c-->
+        {{ .Content }}
+
+        <div id="tags">
+            {{ range .Params.tags }}
+            <small>
+                <a
+                    style="text-decoration: none;color: blue;border: none;"
+                    href="{{ $.Site.Params.baseURL | absURL }}/tags/{{ . }}"
+                    >#{{ . }}</a
+                >
+            </small>
+            {{ end }}
+        </div>
+
+        {{ if and (gt .WordCount 200 ) (.Params.tableofcontents) }}
+        <label id="mobile-only-toc-handler">Table of Content</label>
+        {{ end }}
+        <!-- -->
+
+        {{ if or .PrevInSection .NextInSection }}
+
+        <div
+            style="
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                text-align: center;
+            "
+        >
+            {{ if .NextInSection }}
+            <a href="{{ .NextInSection.Permalink }}">
+                {{ .NextInSection.Title }}
+            </a>
+
+            {{ end }}
+
+            <!-- -->
+
+            {{ if .PrevInSection }}
+            <a href="{{ .PrevInSection.Permalink }}">
+                {{ .PrevInSection.Title }}
+            </a>
+            {{ end }}
+        </div>
+
+        {{ end }}
+    </main>
     {{ end }}
 </div>
 
