@@ -8,7 +8,7 @@ theme = "bittersteel"
 [markup.tableOfContents]
 endLevel = 6
 ordered = false
-startLevel = 1
+startLevel = 2
 
 [markup.highlight]
 codeFences = true

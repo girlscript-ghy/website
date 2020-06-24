@@ -4,7 +4,7 @@
     <body>
         {{- partial "nav.html" . -}}
         {{- partial "header.html" . -}}
-        <div id="content">
+        <div id="content" style="padding: 0 1rem;">
         {{- block "main" . }}{{- end }}
         </div>
         {{- partial "footer.html" . -}}
