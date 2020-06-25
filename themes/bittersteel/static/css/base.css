@@ -8,12 +8,6 @@
  *                                             *
  ***********************************************/
 
-@font-face {
-    font-family: Charter;
-    src: url("/fonts/Charter Regular.ttf"), url("/fonts/Charter Bold.ttf"),
-        url("/fonts/Charter Bold Italic.ttf"), url("/fonts/Charter Italic.ttf");
-}
-
 :root {
     --max-width: 70rem;
 }
