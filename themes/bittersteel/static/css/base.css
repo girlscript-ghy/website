@@ -65,3 +65,93 @@ blockquote {
 }
 
 /* End of Layout: Page*/
+
+/* start of homepage section-3 css */
+
+.heading{
+    text-align: center;
+    margin-bottom: 5rem;
+}
+.girlscript{
+    color: #4fd1d5;
+}
+
+.guwa{
+    font-size: 1rem;
+}
+#features{
+    padding: 50px 0px;
+}
+
+a {
+    text-decoration: none !important;
+    }
+.feature-row{
+    width: 70%;
+    margin:auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.feature-col{
+    flex-basis: 17%;
+    text-align: center;
+}
+.feature-col p{
+    font-size: 1rem;
+    color:#4fd1d5;
+    font-weight: bold;
+}
+
+.head{
+    padding-top: 3px;
+    border-bottom: 2px solid #4fd1d5;
+    padding-bottom: 3px;
+    font-size: 45px;
+}
+.feature-col img{
+    width:5rem;
+    height: 4rem;
+    margin-bottom: 20px;
+}
+
+.feature-btn{
+    margin: 80px auto 0px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.feature-btn .other{
+    text-align: right;
+    padding-right: 50px;
+}
+@media only screen and (max-width:800px){
+    .feature-col{
+        flex-basis: 50%;
+        text-align: center;
+    }
+    .feature-col img{
+        width:7rem;
+        height: 5rem;
+        margin-top: 50px;
+    }
+    
+}
+@media only screen and (max-width:400px){
+    .feature-col{
+        flex-basis: 100%;
+        text-align: center;
+    }
+    .feature-col img{
+        width:8rem;
+        height: 6rem;
+        margin-top: 40px;
+    }
+    
+}
+
+/* end of homepage section-3 css */
