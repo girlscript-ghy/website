@@ -9,59 +9,250 @@
  ***********************************************/
 
 :root {
-    --max-width: 70rem;
+  --max-width: 70rem;
 }
 
 * {
-    box-sizing: border-box;
-    font-family: inherit;
-    color: inherit;
-    background-color: inherit;
+  box-sizing: border-box;
+  font-family: inherit;
+  color: inherit;
+  background-color: inherit;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 html,
 body {
-    margin: 0;
-    font-family: "Charter", serif;
+  margin: 0;
+  font-family: "Charter", serif;
 }
 
 blockquote {
-    padding: 0 1rem;
-    margin: 0;
-    border-left: 3px solid red;
-    font-style: italic;
+  padding: 0 1rem;
+  margin: 0;
+  border-left: 3px solid red;
+  font-style: italic;
 }
 
 /* Layout: Page */
 #layout-wrapper {
-    max-width: var(--max-width);
-    margin: auto;
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    align-items: flex-start;
-    column-gap: 1rem;
+  /*max-width: var(--max-width);*/
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  align-items: flex-start;
+  column-gap: 1rem;
 }
 
 #layout-wrapper .title {
-    display: block;
-    grid-column: 1 / span 2;
-    text-align: center;
-    min-height: 3vh;
-    padding: 2rem 1rem;
-    background: #cce1ef;
+  display: block;
+  grid-column: 1 / span 2;
+  text-align: center;
+  min-height: 3vh;
+  padding: 2rem 1rem;
+  background: #cce1ef;
 }
 
 #layout-wrapper aside {
-    position: sticky;
-    top: 0;
+  position: sticky;
+  top: 0;
 }
 
 #layout_page {
-    margin: auto;
+  margin: auto;
 }
 
 /* End of Layout: Page*/
+
+/*****************************
+ * HOMEPAGE                  *
+ * ````````                  *
+ * Author: Manash Jyoti Boro * 
+ *                           * 
+ *****************************/
+
+.head {
+  width: 100%;
+  height: auto;
+
+  background-image: url("photos/back.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  clip-path: polygon(100% 0%, 100% 100%, 100% 100%, 0% 100%, 0% 0%);
+  position: absolute;
+}
+.head:before {
+  content: "";
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left: 0;
+  right: 0;
+  opacity: 0.7;
+  z-index: -1;
+  background: #478d8f;
+}
+.head {
+  width: 100%;
+  height: auto;
+  color: black;
+  text-align: center;
+  position: relative;
+}
+
+/* BACKGROUND WORK END */
+
+.head {
+  width: 100%;
+  height: 60vh;
+  background-color: #478d8f;
+}
+
+.header-section {
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left {
+  width: 50%;
+  height: auto;
+  text-align: left;
+  margin-left: 5%;
+  padding-left: 20%;
+  font-size: 26px;
+  padding-right: 2%;
+  color: #fff;
+}
+
+.right {
+  width: 50%;
+  height: auto;
+  text-align: left;
+}
+
+span {
+  font-size: 70px;
+  font-weight: bold;
+  color: #2bd0dc;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: normal;
+}
+h4 {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.line {
+  height: 2px;
+  width: 85%;
+  color: gray;
+  background: #2bd0dc;
+  background: -webkit-linear-gradient(left, #2bd0dc, #ccdfda);
+  background: -moz-linear-gradient(left, #2bd0dc, #ccdfda);
+  background: linear-gradient(to right, #2bd0dc, #ccdfda);
+  text-align: right;
+  margin-left: -4%;
+  border-radius: 50px;
+  margin-top: 0.5%;
+}
+
+/* BUTTON NEED TO BE FIXED*/
+
+.button {
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 25px;
+  background-color: #478d8f;
+  color: white;
+  border: 3px solid #fff;
+}
+
+.button1 {
+  font-size: 0px;
+  border: 0px;
+}
+
+/* RESPONSIVE PART START */
+
+@media (max-width: 992px) {
+  .right {
+    width: 100%;
+    opacity: 0;
+    margin-left: -50%;
+  }
+  .left {
+    width: 100%;
+    height: auto;
+    padding-left: 60%;
+    margin-left: 15%;
+
+    padding-left: 2%;
+  }
+  .head {
+    width: 100%;
+    height: 23vh;
+  }
+  .header-section {
+    width: 100%;
+    height: 20vh;
+    background-color: #006064;
+  }
+}
+
+@media (max-width: 992px) {
+  span {
+    font-size: 80px;
+  }
+  .mob-img {
+    width: 100px;
+    margin-bottom: -5%;
+  }
+  .line {
+    width: 106%;
+  }
+}
+
+@media (max-width: 992px) {
+  h1 {
+    font-size: 35px;
+  }
+  h4 {
+    font-size: 24px;
+  }
+
+  .button {
+    margin-top: -20%;
+    opacity: 0;
+  }
+
+  .button1 {
+    padding: 14px 29px;
+    text-align: center;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 35px;
+    background-color: #478d8f;
+    color: white;
+    border: 3px solid #fff;
+    margin-top: -60%;
+    margin-left: 50%;
+  }
+
+  main {
+    background-color: #006064;
+    padding-bottom: 5%;
+  }
+}
+
+/* RESPONSIVE PART END */
