@@ -8,19 +8,19 @@
   padding: 0;
 }
 
-
 /* Navigation Bar  */
 #navbar{
   display: flex;
   flex-wrap: wrap;
-  /* align-items: center; */
   position: sticky;
-  top: 0;
+  margin-top: 10px;
   
 }
 
 #logo{
   margin: 10px 34px;
+  transition: 1s;
+  transform: scale(1.4)
 }
 
 #logo img{
@@ -51,11 +51,13 @@
   padding-right:32px;
   text-decoration: none;
   background-color: #01a0b5;
+  border-radius: 8px;
+  
 
 }
 #login{
   position: absolute;
-  top:6px;
+  top:13px;
   left: 87%;
   height: 35px;
   width: 100px;
@@ -65,22 +67,571 @@
   border-radius: 50px;
   margin: 8px 0px;
   text-decoration: none;
-  color: #006572;
+  color: #000000;
   font-size: 1.2rem;
   padding-top: 7px;
-
+  transition: 0.5s;
+  transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+  
 
 }
 
 #navbar ul li a:hover {
-  color: #006572;
-  background-color: rgb(240, 255, 253);
-  transform: scale(1.4);
+  color: #ffffff;
+  background-color: rgb(0, 0, 0);
+  transform: scale(1.2);
+  transition: 0.9s;
+  box-shadow: inset -5px 5px 10px rgb(192, 19, 7);
+ 
 }
 #login:hover{
   transform: scale(1.1);
   
+  transition: 0.9s;
+  text-shadow: 1px 1px 3px  black;
 }
 
 
 /* Navbar ends here   ==  For Desktop Only*/
+
+/* Navbar starts here == For Mobile */
+@media (max-width: 950px){
+
+  #logo{
+    position: absolute;
+    top: 0;
+    left: 35%;    
+  }
+
+  
+/* Navigation Bar: List Styling */
+
+#navbar ul{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+
+  position: absolute;
+  top: 150px;
+  left: 42%;
+  
+ 
+  
+  /* font-family: 'Baloo Bhai', cursive; */
+}
+
+#navbar ul li{ 
+  list-style: none;
+  font-size: 1.3rem;
+  margin-top: 10px;
+  transition: cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+#navbar ul li a{
+  height: 53px;
+  margin-left: 22px;
+  margin-bottom: 2px;
+  color: white;
+  display: block;
+  padding-top:22px;
+  padding-left:32px;
+  padding-right:32px;
+  text-decoration: none;
+  background-color: #01a0b5;
+}
+#login{
+  display: block;
+  position: absolute;
+  top: 590px;
+  left: 370px;
+  
+}
+@media (max-width:360px){
+  #logo{
+    position: absolute;
+    top: 0;
+    left: 15%;
+
+
+    
+  }
+
+  
+/* Navigation Bar: List Styling */
+
+#navbar ul{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+
+  position: absolute;
+  top: 100px;
+  left: 30%;
+  
+ 
+  
+  /* font-family: 'Baloo Bhai', cursive; */
+}
+
+#navbar ul li{ 
+  list-style: none;
+  font-size: 1.3rem;
+  margin-top: 10px;
+  transition: cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+#navbar ul li a{
+  height: 53px;
+  margin-left: 22px;
+  margin-bottom: 2px;
+  color: white;
+  display: block;
+  padding-top:22px;
+  padding-left:32px;
+  padding-right:32px;
+  text-decoration: none;
+  background-color: #01a0b5;
+}
+#login{
+  display: block;
+  position: absolute;
+  top: 550px;
+  left: 43%;
+  
+}
+}
+@media (min-width:360px)and (max-width:413px){
+  #logo{
+    position: absolute;
+    top: 0;
+    left: 13%;
+
+
+    
+  }
+
+  
+/* Navigation Bar: List Styling */
+
+#navbar ul{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+
+  position: absolute;
+  top: 100px;
+  left: 27%;
+  
+ 
+  
+  /* font-family: 'Baloo Bhai', cursive; */
+}
+
+#navbar ul li{ 
+  list-style: none;
+  font-size: 1.3rem;
+  margin-top: 10px;
+  transition: cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+#navbar ul li a{
+  height: 53px;
+  margin-left: 22px;
+  margin-bottom: 2px;
+  color: white;
+  display: block;
+  padding-top:22px;
+  padding-left:32px;
+  padding-right:32px;
+  text-decoration: none;
+  background-color: #01a0b5;
+}
+#login{
+  display: block;
+  position: absolute;
+  top: 550px;
+  left: 40%;
+}
+}
+}
+@media (min-width:375px) and (max-width:414px){
+  #logo{
+    position: absolute;
+    top: 0;
+    left: 15%;
+
+
+    
+  }
+
+  
+/* Navigation Bar: List Styling */
+
+#navbar ul{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+
+  position: absolute;
+  top: 100px;
+  left: 29%;
+  
+ 
+  
+  /* font-family: 'Baloo Bhai', cursive; */
+}
+
+#navbar ul li{ 
+  list-style: none;
+  font-size: 1.3rem;
+  margin-top: 10px;
+  transition: cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+#navbar ul li a{
+  height: 53px;
+  margin-left: 22px;
+  margin-bottom: 2px;
+  color: white;
+  display: block;
+  padding-top:22px;
+  padding-left:32px;
+  padding-right:32px;
+  text-decoration: none;
+  background-color: #01a0b5;
+}
+#login{
+  display: block;
+  position: absolute;
+  top: 550px;
+  left: 42%;
+}
+}
+
+@media (min-width:361px) and (max-width:411px){
+  #logo{
+    position: absolute;
+    top: 0;
+    left: 15%;
+
+
+    
+  }
+
+  
+/* Navigation Bar: List Styling */
+
+#navbar ul{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+
+  position: absolute;
+  top: 100px;
+  left: 29%;
+  
+ 
+  
+  /* font-family: 'Baloo Bhai', cursive; */
+}
+
+#navbar ul li{ 
+  list-style: none;
+  font-size: 1.3rem;
+  margin-top: 10px;
+  transition: cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+#navbar ul li a{
+  height: 53px;
+  margin-left: 22px;
+  margin-bottom: 2px;
+  color: white;
+  display: block;
+  padding-top:22px;
+  padding-left:32px;
+  padding-right:32px;
+  text-decoration: none;
+  background-color: #01a0b5;
+}
+#login{
+  display: block;
+  position: absolute;
+  top: 550px;
+  left: 41%;
+}
+}
+@media (min-width:412px) and (max-width:414px){
+  #logo{
+    position: absolute;
+    top: 0;
+    left: 15%;
+
+
+    
+  }
+
+  
+/* Navigation Bar: List Styling */
+
+#navbar ul{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+
+  position: absolute;
+  top: 100px;
+  left: 29%;
+  
+ 
+  
+  /* font-family: 'Baloo Bhai', cursive; */
+}
+
+#navbar ul li{ 
+  list-style: none;
+  font-size: 1.3rem;
+  margin-top: 10px;
+  transition: cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+#navbar ul li a{
+  height: 53px;
+  margin-left: 22px;
+  margin-bottom: 2px;
+  color: white;
+  display: block;
+  padding-top:22px;
+  padding-left:32px;
+  padding-right:32px;
+  text-decoration: none;
+  background-color: #01a0b5;
+}
+#login{
+  display: block;
+  position: absolute;
+  top: 550px;
+  left: 40%;
+}
+}
+@media (min-width:413px) and (max-width:530px){
+  #logo{
+    position: absolute;
+    top: 0;
+    left: 15%;
+
+
+    
+  }
+
+  
+/* Navigation Bar: List Styling */
+
+#navbar ul{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+
+  position: absolute;
+  top: 100px;
+  left: 29%;
+  
+ 
+  
+  /* font-family: 'Baloo Bhai', cursive; */
+}
+
+#navbar ul li{ 
+  list-style: none;
+  font-size: 1.3rem;
+  margin-top: 10px;
+  transition: cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+#navbar ul li a{
+  height: 53px;
+  margin-left: 22px;
+  margin-bottom: 2px;
+  color: white;
+  display: block;
+  padding-top:22px;
+  padding-left:32px;
+  padding-right:32px;
+  text-decoration: none;
+  background-color: #01a0b5;
+}
+#login{
+  display: block;
+  position: absolute;
+  top: 550px;
+  left:38%;
+}
+}
+@media (min-width:781px) and (max-width:947px){
+  #logo{
+    position: absolute;
+    top: 0;
+    left: 38%;
+  }
+
+  
+/* Navigation Bar: List Styling */
+
+#navbar ul{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+
+  position: absolute;
+  top: 100px;
+  left: 45%;
+  
+ 
+  
+  /* font-family: 'Baloo Bhai', cursive; */
+}
+
+#navbar ul li{ 
+  list-style: none;
+  font-size: 1.3rem;
+  margin-top: 10px;
+  transition: cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+#navbar ul li a{
+  height: 53px;
+  margin-left: 22px;
+  margin-bottom: 2px;
+  color: white;
+  display: block;
+  padding-top:22px;
+  padding-left:32px;
+  padding-right:32px;
+  text-decoration: none;
+  background-color: #01a0b5;
+}
+#login{
+  display: block;
+  position: absolute;
+  top: 550px;
+  left: 50%;
+}
+}
+@media (min-width:530px) and (max-width:700px){
+  #logo{
+    position: absolute;
+    top: 0;
+    left: 30%;
+
+
+    
+  }
+
+  
+/* Navigation Bar: List Styling */
+
+#navbar ul{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+
+  position: absolute;
+  top: 100px;
+  left: 39%;
+  
+ 
+  
+  /* font-family: 'Baloo Bhai', cursive; */
+}
+
+#navbar ul li{ 
+  list-style: none;
+  font-size: 1.3rem;
+  margin-top: 10px;
+  transition: cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+#navbar ul li a{
+  height: 53px;
+  margin-left: 22px;
+  margin-bottom: 2px;
+  color: white;
+  display: block;
+  padding-top:22px;
+  padding-left:32px;
+  padding-right:32px;
+  text-decoration: none;
+  background-color: #01a0b5;
+}
+#login{
+  display: block;
+  position: absolute;
+  top: 550px;
+  left: 45%;
+}
+}
+@media (min-width:1045px) and (max-width:1190px){
+  #logo{
+    margin: 10px 34px;
+  }
+  
+  #logo img{
+    height: 80px;
+    margin: 3px 6px;
+  }
+  
+  
+  /* Navigation Bar: List Styling */
+  
+  #navbar ul{
+    display: flex;
+    /* font-family: 'Baloo Bhai', cursive; */
+  }
+  
+  #navbar ul li{ 
+    list-style: none;
+    font-size: 1.3rem;
+  }
+  
+  #navbar ul li a{
+    height: 53px;
+    margin-left: 22px;
+    color: white;
+    display: block;
+    padding-top:22px;
+    padding-left:32px;
+    padding-right:32px;
+    text-decoration: none;
+    background-color: #01a0b5;
+    
+  
+  }
+  #login{
+    position: absolute;
+    top:90px;
+    left: 87%;
+    height: 35px;
+    width: 100px;
+    text-align: center;
+    background-color: white;
+    border: 3px solid #01a0b5;
+    border-radius: 50px;
+    margin: 8px 0px;
+    text-decoration: none;
+    color: #006572;
+    font-size: 1.2rem;
+    padding-top: 7px;
+    transition: 0.5s;
+    transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+  
+  }
+}
