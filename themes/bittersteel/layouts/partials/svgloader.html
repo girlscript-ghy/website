@@ -1,0 +1,14 @@
+{{ $partial_svgloader_filepath_theme := (printf "%s/%s" "static/images" .)}}
+<!-- -->
+{{ $partial_svgloader_filepath := (printf "%s/%s" "themes/bittersteel/static/images" .)}}
+<div class="svg-loader">
+  {{ if (fileExists $partial_svgloader_filepath) -}}
+  <!-- -->
+  {{ readFile $partial_svgloader_filepath | safeHTML }}
+  <!-- -->
+  {{ else if (fileExists $partial_svgloader_filepath_theme )}}
+  <!-- -->
+  {{ readFile $partial_svgloader_filepath | safeHTML }}
+  <!-- -->
+  {{ end }}
+</div>
