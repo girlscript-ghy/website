@@ -68,56 +68,88 @@
 
   <div class="blog-wrapper">
     <div class="content">
-      <div>
-        <h3 class="blog-title"><a href="#">This is a blog Title</a></h3>
-        <p>
-          Sit quidem maxime accusantium cupiditate nulla quo eveniet, similique
-          Sit ullam alias alias placeat facere saepe Blanditiis aperiam nihil
-          eius ab voluptatem, facilis aspernatur eaque velit perferendis Modi
-          incidunt provident maiores atque debitis Deserunt explicabo doloremque
-          perferendis dicta similique architecto
-        </p>
-        <small>
-          23 March, 2020
-        </small>
-      </div>
+      {{ range (where .Site.RegularPages "Section" "blogs") }}
 
       <div>
-        <h3 class="blog-title"><a href="#">This is a blog Title</a></h3>
-        <p>
-          Sit quidem maxime accusantium cupiditate nulla quo eveniet, similique
-          Sit ullam alias alias placeat facere saepe Blanditiis aperiam nihil
-          eius ab voluptatem, facilis aspernatur eaque velit perferendis Modi
-          incidunt provident maiores atque debitis Deserunt explicabo doloremque
-          perferendis dicta similique architecto
-        </p>
+        <h3 class="blog-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
         <small>
-          23 March, 2020
+          {{ .Date.Format "06 Jan, 2006" }}
         </small>
-      </div>
-
-      <div>
-        <h3 class="blog-title"><a href="">This is a blog Title</a></h3>
         <p>
-          Sit quidem maxime accusantium cupiditate nulla quo eveniet, similique
-          Sit ullam alias alias placeat facere saepe Blanditiis aperiam nihil
-          eius ab voluptatem, facilis aspernatur eaque velit perferendis Modi
-          incidunt provident maiores atque debitis Deserunt explicabo doloremque
-          perferendis dicta similique architecto
+          {{ .Summary | truncate 300 }}
         </p>
-        <small>
-          23 March, 2020
-        </small>
       </div>
+      {{ end }}
 
       <div class="read-more-blog">
-        <a href="#">Read More on Blog Page</a>
+        <a href="/blogs">Read More on Blog Page</a>
       </div>
     </div>
 
     <div class="graphics">
       {{ partial "svgloader.html" "human-sitting-chair.svg" }}
     </div>
+  </div>
+</div>
+
+<div id="team">
+  <h2>Team</h2>
+
+  <div class="team-wrapper">
+    <div>
+      <h3 class="person-name">Daenerys Targaryen</h3>
+      <small>
+        <div class="big-dot"></div>
+        <span>THE Queen</span>
+      </small>
+
+      <div class="img">
+        <img src="/images/man.svg" alt="" />
+      </div>
+    </div>
+
+    <div>
+      <h3 class="person-name">Jon Snow</h3>
+      <small>
+        <div class="big-dot"></div>
+        <span>Lord Commander</span>
+      </small>
+
+      <div class="img">
+        <img src="/images/man.svg" alt="" />
+      </div>
+    </div>
+
+    <div>
+      <h3 class="person-name">Tormund Giantsbane</h3>
+      <small>
+        <div class="big-dot"></div>
+        <span>FreeFolk</span>
+      </small>
+
+      <div class="img">
+        <img src="/images/man.svg" alt="" />
+      </div>
+    </div>
+
+    <div>
+      <h3 class="person-name">Brandon Stark</h3>
+      <small>
+        <div class="big-dot"></div>
+        <span>Three-Eyed Raven</span>
+      </small>
+
+      <div class="img">
+        <img src="/images/man.svg" alt="" />
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="map">
+  <h2>Map of the City</h2>
+  <div class="map-wrapper">
+    {{ partial "svgloader.html" "ghy-city.svg" }}
   </div>
 </div>
 {{ end }}
