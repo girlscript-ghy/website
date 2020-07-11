@@ -1,7 +1,69 @@
 {{ define "main" }}
 
-<h1>Hello World</h1>
+<header>
+  <div class="content">
+    <h1>
+      GirlScript <br />
+      Guwahati
+    </h1>
 
-{{ partial "svgloader.html" "pair-prog.svg" }}
+    <p>
+      <strong>We are here to support people in tech.</strong>
+      <br />
+      Finding like minded people who resonate with your goal is extremely
+      important. Find such enthusiastic people through GirlScript's network.
+    </p>
 
+    <button style="max-width: 250px;" class="btn">Get Started</button>
+  </div>
+  <div class="graphics">
+    <div id="blue-bg"></div>
+    {{ partial "svgloader.html" "pair-prog.svg" }}
+  </div>
+</header>
+
+<div id="events">
+  <h2>Events</h2>
+  <div class="card-wrapper">
+    <div>
+      <h3 class="card-title">Title</h3>
+      <span class="subtitle">SubTitle</span>
+      <p>
+        Adipisicing aspernatur molestiae praesentium minus earum blanditiis
+        corporis in Obcaecati amet ratione adipisci quisquam animi? Vero debitis
+        magni est aperiam.
+      </p>
+      <div class="flex-grow-1"></div>
+      <button class="btn outlined">Register Here</button>
+    </div>
+
+    <div>
+      <h3 class="card-title">Title</h3>
+      <span class="subtitle">SubTitle</span>
+      <p>
+        Lorem quae deserunt nostrum doloremque libero! Aliquam beatae laudantium
+        qui consequatur voluptate Debitis totam adipisci consequatur voluptates
+        expedita dolore. Eum.
+      </p>
+      <div class="flex-grow-1"></div>
+      <button class="btn outlined">Register Here</button>
+    </div>
+
+    <div>
+      <h3 class="card-title">Title</h3>
+      <span class="subtitle">SubTitle</span>
+      <p>
+        Elit iste amet blanditiis assumenda vitae. Quaerat id quidem esse
+        doloremque porro Iusto perferendis nisi recusandae perferendis amet
+        Repudiandae fugit
+      </p>
+      <div class="flex-grow-1"></div>
+      <button class="btn outlined">Register Here</button>
+    </div>
+  </div>
+</div>
+
+<div id="blog">
+  <h2>Blog</h2>
+</div>
 {{ end }}
