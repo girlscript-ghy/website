@@ -28,7 +28,7 @@ body {
   margin: 0;
   font-family: "Lato", sans-serif;
   line-height: 1.6;
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 
 h1,
@@ -89,7 +89,7 @@ header {
 }
 
 header .content {
-  font-size: 1.4em;
+  font-size: 1.3em;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -154,9 +154,9 @@ header #blue-bg {
 
 #events h2,
 #blog h2,
-#team h2, 
+#team h2,
 #map h2 {
-  font-size: 3em;
+  font-size: 2.7em;
   margin: 12rem 0 1rem 0;
 }
 
@@ -164,7 +164,7 @@ header #blue-bg {
 #blog h3,
 #team h3 {
   margin: 0;
-  font-size: 1.3em;
+  font-size: 1.2em;
 }
 
 #events > div.card-wrapper {
@@ -371,9 +371,11 @@ header #blue-bg {
 
 #map .map-wrapper {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
   overflow: hidden;
+  padding: 2rem;
 }
 
 /* Homepage Section: Nav */
@@ -400,13 +402,13 @@ nav#top-nav {
 }
 
 nav#top-nav a {
-  color: #1D2433;
+  color: #1d2433;
   text-decoration: none;
 }
 
 nav#top-nav .logo {
   width: 45px;
-  height:45px;
+  height: 45px;
   border-radius: 50%;
   background: #000;
   overflow: hidden;
@@ -419,3 +421,48 @@ nav#top-nav .logo {
 nav#top-nav .menu a:not(:first-child) {
   margin-left: 4rem;
 }
+
+/* Homepage Section: Footer*/
+#footer-wrapper {
+  background: #051c56;
+  color: #ffffff8c;
+  font-size: 0.8em;
+}
+
+footer {
+  max-width: 70rem;
+  padding: 6rem 1rem;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 10rem;
+  row-gap: 2rem;
+}
+
+footer h3 {
+  margin: 0;
+  color: #fff;
+}
+
+footer a {
+  text-decoration: none;
+  color: inherit
+}
+ footer .style-a-tags a {
+    border-bottom: 1px solid red;
+ }
+
+ @media (max-width: 950px) {
+    footer {
+      display: block;
+      padding: 3rem 1rem;
+    }
+
+    footer > div:not(:last-child) {
+      margin-bottom: 3rem;
+    }
+
+    footer .img {
+      max-width: 420px;
+    }
+ }
