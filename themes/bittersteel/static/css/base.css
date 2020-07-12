@@ -419,3 +419,49 @@ nav#top-nav .logo {
 nav#top-nav .menu a:not(:first-child) {
   margin-left: 4rem;
 }
+
+/* burger */
+.burger{
+  display: none;
+position: absolute;
+cursor: pointer;
+right:5%;
+top:45px;
+}
+.line{
+  width: 33px;
+  background-color: black;
+  height:4px;
+  margin:5px 3px;
+}
+/* Responsiveness of navbar */
+@media only screen and (max-width:929px){
+  #top-nav{
+    flex-direction: column;
+  }
+  .menu{
+    flex-direction: column;
+    margin-top: 1rem;
+}
+  .burger{
+    display:block;
+  }
+  .nav-items{
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .item1{
+    margin-left: 4rem;
+  }
+  .logo{
+    margin-left: 10rem;
+  }
+  .h-nav{
+    height: 100vh;
+  }
+  .v-class{
+    opacity: 0;
+  }
+
+}

@@ -3,12 +3,21 @@
 <section id="nav-wrapper">
   <nav id="top-nav">
     <div class="logo"><img src="/images/logo.svg" alt="" /></div>
-    <div class="menu">
-      <a href="/">Home</a>
-      <a href="/">Events</a>
-      <a href="/">Blogs</a>
-      <a href="/">Volunteers</a>
-      <a href="/">Contact</a>
+    <div class="menu h-nav">
+      <div class="nav-items v-class">
+
+      <a  class="item1" href="/">Home</a>
+      <a  class="item2" href="/">Events</a>
+      <a  class="item3"  href="/">Blogs</a>
+      <a  class="item4" href="/">Volunteers</a>
+      <a  class="item5" href="/">Contact</a>
+    </div>
+    <div class="burger">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+
       <!--  -->
 
       <!--{{ range (where $.Site.RegularPages "Section" "pages") }}-->
@@ -37,7 +46,7 @@
       if (offset > window.pageYOffset) {
         console.log("Scroll Up");
         top_nav.classList.remove("hide");
-      }
+  }
       // scroll up
       else {
         console.log("Scroll Down");
@@ -47,4 +56,12 @@
       offset = window.pageYOffset;
     });
   })();
+  burger=document.querySelector('.burger')
+  menu=document.querySelector('.h-nav')
+  navItems=document.querySelector('.v-class')
+
+  burger.addEventListener('click',()=>{
+    navItems.classList.toggle('v-class');
+    menu.classList.toggle('h-nav');
+  })
 </script>
