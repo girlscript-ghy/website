@@ -1,27 +1,50 @@
 {{ $pathname := $.Page.Permalink | relURL | lower }}
 
 <section id="nav-wrapper">
-  <nav>
+  <nav id="top-nav">
+    <div class="logo"><img src="/images/logo.svg" alt="" /></div>
     <div class="menu">
-      {{ if (eq $pathname "/")}}
-      <a href="/" class="active">Home</a>
-      {{ else }}
       <a href="/">Home</a>
-      {{ end }}
+      <a href="/">Events</a>
+      <a href="/">Blogs</a>
+      <a href="/">Volunteers</a>
+      <a href="/">Contact</a>
       <!--  -->
 
-      {{ range (where $.Site.RegularPages "Section" "pages") }}
-      <!--  -->
-      {{ $pagepath := print "/" .Title "/" | lower }}
-      <!--  -->
-      <!--  -->
-      {{ if (eq $pathname $pagepath )}}
-      <a href="{{ .Permalink }}" class="active">{{ .Title }}</a>
-      {{ else }}
-      <a href="{{ .Permalink }}">{{ .Title }}</a>
-      {{ end }}
-      <!--  -->
-      {{ end }}
+      <!--{{ range (where $.Site.RegularPages "Section" "pages") }}-->
+      <!--[>  <]-->
+      <!--{{ $pagepath := print "/" .Title "/" | lower }}-->
+      <!--[>  <]-->
+      <!--[>  <]-->
+      <!--{{ if (eq $pathname $pagepath )}}-->
+      <!--<a href="{{ .Permalink }}" class="active">{{ .Title }}</a>-->
+      <!--{{ else }}-->
+      <!--<a href="{{ .Permalink }}">{{ .Title }}</a>-->
+      <!--{{ end }}-->
+      <!--[>  <]-->
+      <!--{{ end }}-->
     </div>
   </nav>
 </section>
+
+<script>
+  (() => {
+    let offset = window.pageYOffset;
+    const top_nav = document.querySelector("#nav-wrapper");
+
+    window.addEventListener("scroll", () => {
+      // scroll down
+      if (offset > window.pageYOffset) {
+        console.log("Scroll Up");
+        top_nav.classList.remove("hide");
+      }
+      // scroll up
+      else {
+        console.log("Scroll Down");
+        top_nav.classList.add("hide");
+      }
+
+      offset = window.pageYOffset;
+    });
+  })();
+</script>

@@ -375,3 +375,47 @@ header #blue-bg {
   align-items: center;
   overflow: hidden;
 }
+
+/* Homepage Section: Nav */
+#nav-wrapper {
+  z-index: 10000;
+  position: fixed;
+  width: 100%;
+  transition: 0.3s ease-in-out transform, 0.3s ease background;
+}
+
+#nav-wrapper:hover {
+  background: #fff;
+}
+
+#nav-wrapper.hide {
+  transform: translateY(-100%);
+}
+
+nav#top-nav {
+  display: flex;
+  align-items: center;
+  padding: 3rem;
+  text-transform: uppercase;
+}
+
+nav#top-nav a {
+  color: #1D2433;
+  text-decoration: none;
+}
+
+nav#top-nav .logo {
+  width: 45px;
+  height:45px;
+  border-radius: 50%;
+  background: #000;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10rem;
+}
+
+nav#top-nav .menu a:not(:first-child) {
+  margin-left: 4rem;
+}
