@@ -479,6 +479,7 @@ nav#top-nav .handler .line {
     top: 4rem;
     left: 0;
     width: 100%;
+    background: #fff;
     box-shadow: 0 1.9px 2.2px rgba(0, 0, 0, 0.02),
       0 4.7px 5.3px rgba(0, 0, 0, 0.028), 0 8.8px 10px rgba(0, 0, 0, 0.035),
       0 15.6px 17.9px rgba(0, 0, 0, 0.042), 0 29.2px 33.4px rgba(0, 0, 0, 0.05),
