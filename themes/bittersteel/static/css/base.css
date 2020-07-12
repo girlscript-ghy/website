@@ -349,6 +349,30 @@ header #blue-bg {
   margin-right: 10px;
 }
 
+#team .read-more {
+  display: inline-block;
+  margin: 2rem auto;
+  border: 1px solid #3bbbed50;
+  color: #3bbbed;
+  padding: 0.5rem 2rem;
+  border-radius: 5rem;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #fff;
+  transition: 0.3s ease box-shadow, 0.3s ease border;
+}
+
+#team .read-more:hover {
+  font-weight: bold;
+  border-color: transparent;
+  box-shadow: 0 0.7px 2.2px rgba(59, 187, 237, 0.048),
+    0 1.8px 5.3px rgba(59, 187, 237, 0.06),
+    0 3.4px 10px rgba(59, 187, 237, 0.06), 0 6px 17.9px rgba(59, 187, 237, 0.08),
+    0 11.3px 33.4px rgba(59, 187, 237, 0.102),
+    0 27px 80px rgba(59, 187, 237, 0.3);
+}
+
 @media (max-width: 1000px) {
   #team .team-wrapper {
     grid-template-columns: 1fr 1fr;
