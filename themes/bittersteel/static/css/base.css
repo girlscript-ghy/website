@@ -384,6 +384,8 @@ header #blue-bg {
   position: fixed;
   width: 100%;
   transition: 0.3s ease-in-out transform, 0.3s ease background;
+  font-size: 0.8em;
+  background: #ffffff78;
 }
 
 #nav-wrapper:hover {
@@ -418,8 +420,82 @@ nav#top-nav .logo {
   margin-right: 10rem;
 }
 
+nav#top-nav .menu,
+nav#top-nav .logo,
+nav#top-nav .logo-handler-wrapper {
+  background-color: transparent;
+}
+
 nav#top-nav .menu a:not(:first-child) {
-  margin-left: 4rem;
+  margin-left: 3rem;
+}
+
+/* burger */
+nav#top-nav .handler {
+  display: none;
+}
+
+nav#top-nav .handler .line {
+  width: 33px;
+  background-color: black;
+  height: 4px;
+  margin: 5px 3px;
+}
+
+/* Responsiveness of navbar */
+@media only screen and (max-width: 929px) {
+  #nav-wrapper {
+    background: #fff;
+    position: sticky;
+    top: 0;
+    left: 0;
+  }
+
+  nav#top-nav .logo-handler-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    z-index: 2000;
+  }
+
+  nav#top-nav .handler {
+    display: block;
+  }
+
+  nav#top-nav {
+    flex-direction: column;
+    align-items: baseline;
+    padding: 1rem;
+    position: relative;
+  }
+
+  nav#top-nav .logo {
+    margin: 0;
+  }
+
+  nav#top-nav .menu {
+    position: absolute;
+    top: 4rem;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 1.9px 2.2px rgba(0, 0, 0, 0.02),
+      0 4.7px 5.3px rgba(0, 0, 0, 0.028), 0 8.8px 10px rgba(0, 0, 0, 0.035),
+      0 15.6px 17.9px rgba(0, 0, 0, 0.042), 0 29.2px 33.4px rgba(0, 0, 0, 0.05),
+      0 70px 80px rgba(0, 0, 0, 0.07);
+    transition: 0.3s linear transform, 0.3s ease-out opacity;
+  }
+
+  nav#top-nav .menu.hide {
+    transform: translateY(-200%);
+    opacity: 0;
+  }
+
+  nav#top-nav .menu a {
+    margin: 0 !important;
+    display: block;
+    padding: 0.5rem 1.3rem;
+  }
 }
 
 /* Homepage Section: Footer*/
@@ -446,23 +522,23 @@ footer h3 {
 
 footer a {
   text-decoration: none;
-  color: inherit
+  color: inherit;
 }
- footer .style-a-tags a {
-    border-bottom: 1px solid red;
- }
+footer .style-a-tags a {
+  border-bottom: 1px solid red;
+}
 
- @media (max-width: 950px) {
-    footer {
-      display: block;
-      padding: 3rem 1rem;
-    }
+@media (max-width: 950px) {
+  footer {
+    display: block;
+    padding: 3rem 1rem;
+  }
 
-    footer > div:not(:last-child) {
-      margin-bottom: 3rem;
-    }
+  footer > div:not(:last-child) {
+    margin-bottom: 3rem;
+  }
 
-    footer .img {
-      max-width: 420px;
-    }
- }
+  footer .img {
+    max-width: 420px;
+  }
+}

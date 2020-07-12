@@ -2,13 +2,21 @@
 
 <section id="nav-wrapper">
   <nav id="top-nav">
-    <div class="logo"><img src="/images/logo.svg" alt="" /></div>
-    <div class="menu">
+    <div class="logo-handler-wrapper">
+      <div class="logo"><img src="/images/logo.svg" alt="" /></div>
+      <div class="handler">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </div>
+    <div class="menu hide">
       <a href="/">Home</a>
       <a href="/">Events</a>
       <a href="/">Blogs</a>
       <a href="/">Volunteers</a>
       <a href="/">Contact</a>
+
       <!--  -->
 
       <!--{{ range (where $.Site.RegularPages "Section" "pages") }}-->
@@ -31,20 +39,26 @@
   (() => {
     let offset = window.pageYOffset;
     const top_nav = document.querySelector("#nav-wrapper");
+    const burger = document.querySelector("nav#top-nav .handler");
+    const menu = document.querySelector("nav#top-nav .menu");
 
     window.addEventListener("scroll", () => {
       // scroll down
       if (offset > window.pageYOffset) {
-        console.log("Scroll Up");
         top_nav.classList.remove("hide");
+        menu.classList.add("hide");
       }
       // scroll up
       else {
-        console.log("Scroll Down");
         top_nav.classList.add("hide");
+        menu.classList.add("hide");
       }
 
       offset = window.pageYOffset;
+    });
+
+    burger.addEventListener("click", () => {
+      menu.classList.toggle("hide");
     });
   })();
 </script>
