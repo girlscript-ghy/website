@@ -14,23 +14,8 @@
       <a href="/">Home</a>
       <a href="/">Events</a>
       <a href="/">Blogs</a>
-      <a href="/">Volunteers</a>
+      <a href="/team">Volunteers</a>
       <a href="/">Contact</a>
-
-      <!--  -->
-
-      <!--{{ range (where $.Site.RegularPages "Section" "pages") }}-->
-      <!--[>  <]-->
-      <!--{{ $pagepath := print "/" .Title "/" | lower }}-->
-      <!--[>  <]-->
-      <!--[>  <]-->
-      <!--{{ if (eq $pathname $pagepath )}}-->
-      <!--<a href="{{ .Permalink }}" class="active">{{ .Title }}</a>-->
-      <!--{{ else }}-->
-      <!--<a href="{{ .Permalink }}">{{ .Title }}</a>-->
-      <!--{{ end }}-->
-      <!--[>  <]-->
-      <!--{{ end }}-->
     </div>
   </nav>
 </section>
