@@ -307,6 +307,7 @@ header #blue-bg {
 }
 
 #team .team-wrapper > div {
+  position: relative;
   padding: 1rem;
   box-shadow: 0 0.7px 2.2px rgba(59, 187, 237, 0.048),
     0 1.8px 5.3px rgba(59, 187, 237, 0.06),
@@ -315,15 +316,25 @@ header #blue-bg {
     0 27px 80px rgba(59, 187, 237, 0.3);
   border-radius: 0.6rem;
   background: #fff;
+  cursor: pointer;
 }
 
-/*#team .team-wrapper > div:hover {*/
-/*box-shadow: 0 0.7px 2.2px rgba(59, 187, 237, 0.048),*/
-/*0 1.8px 5.3px rgba(59, 187, 237, 0.06),*/
-/*0 3.4px 10px rgba(59, 187, 237, 0.06), 0 6px 17.9px rgba(59, 187, 237, 0.08),*/
-/*0 11.3px 33.4px rgba(59, 187, 237, 0.102),*/
-/*0 27px 80px rgba(59, 187, 237, 0.3);*/
-/*}*/
+#team .team-wrapper div.overlay {
+  position: absolute;
+  overflow: auto;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  color: #03a9f4;
+  padding: 2rem;
+  transition: 0.3s ease opacity, 0.3s ease-in-out transform;
+}
+
+#team .team-wrapper div.overlay.hide {
+  opacity: 0;
+  transform: scale(1.5);
+}
 
 #team .team-wrapper .img {
   margin-top: 2rem;

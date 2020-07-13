@@ -23,6 +23,18 @@
   <div class="team-wrapper">
     {{ range $.Site.Data.team }}
     <div>
+      <div class="overlay hide">
+        {{ if not (eq .about nil) }}
+        <!-- -->
+        {{ .about }}
+        <!-- -->
+        {{ else }}
+        <!-- -->
+        No About Info Found
+        <!-- -->
+        {{ end }}
+      </div>
+
       <h3 class="person-name">{{ .name }}</h3>
       <small>
         <div class="big-dot"></div>
@@ -31,12 +43,10 @@
 
       <div class="img">
         {{ if eq .avatar nil }}
-        <!--<img src="/.netlify/functions/exists-gravatar/?email={{ md5 .email }}" alt="" />-->
         <img
-          src="https://gravatar.com/avatar/{{ md5 .email }}?s=200"
+          src="https://www.gravatar.com/avatar/{{ md5 .email }}?d=https%3A%2F%2Fi.imgur.com%2FjSn2H2Q.png&s=200"
           alt=""
         />
-
         {{ else }}
         <img src="{{ .avatar }}" alt="" />
         {{ end }}
@@ -45,4 +55,14 @@
     {{ end }}
   </div>
 </div>
+
+<script>
+  (() => {
+    const overlays = [...document.querySelectorAll("#team .overlay")];
+    overlays.forEach(elem => {
+      elem.addEventListener("click", () => elem.classList.toggle("hide"));
+    });
+  })();
+</script>
+
 {{ end }}
