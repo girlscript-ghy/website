@@ -1,0 +1,48 @@
+{{ define "main" }}
+
+<style>
+  section#nav-wrapper {
+    position: sticky;
+    top: 0;
+    left: 0;
+  }
+
+  #team h2 {
+    margin: 1rem;
+  }
+
+  #team .team-wrapper {
+    grid-gap: 2rem;
+    gap: 2rem;
+  }
+</style>
+
+<div id="team">
+  <h2>Team</h2>
+
+  <div class="team-wrapper">
+    {{ range $.Site.Data.team }}
+    <div>
+      <h3 class="person-name">{{ .name }}</h3>
+      <small>
+        <div class="big-dot"></div>
+        <span>{{ .title }}</span>
+      </small>
+
+      <div class="img">
+        {{ if eq .avatar nil }}
+        <!--<img src="/.netlify/functions/exists-gravatar/?email={{ md5 .email }}" alt="" />-->
+        <img
+          src="https://gravatar.com/avatar/{{ md5 .email }}?s=200"
+          alt=""
+        />
+
+        {{ else }}
+        <img src="{{ .avatar }}" alt="" />
+        {{ end }}
+      </div>
+    </div>
+    {{ end }}
+  </div>
+</div>
+{{ end }}

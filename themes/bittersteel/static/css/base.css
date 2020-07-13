@@ -156,7 +156,7 @@ header #blue-bg {
 #blog h2,
 #team h2,
 #map h2 {
-  font-size: 2.7em;
+  font-size: 2em;
   margin: 12rem 0 1rem 0;
 }
 
@@ -327,6 +327,12 @@ header #blue-bg {
 
 #team .team-wrapper .img {
   margin-top: 2rem;
+  text-align: center;
+}
+
+#team .team-wrapper img {
+  max-width: 80%;
+  width: 100%;
 }
 
 #team .team-wrapper small {
@@ -337,6 +343,7 @@ header #blue-bg {
   display: inline-flex;
   align-items: center;
   font-weight: bold;
+  font-size: 0.6em;
   color: #3bbbed;
   text-transform: uppercase;
 }

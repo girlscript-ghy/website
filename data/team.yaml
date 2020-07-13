@@ -1,0 +1,144 @@
+# when no `avatar` url provided, gravatar should be used.
+# gravatar url: https://gravatar.com/avatar/(md5 checksum of the email)
+
+- name: Eshita Nandy
+  title: Chapter Lead
+  email: nandyeshita4@gmail.com
+  avatar: https://avatars3.githubusercontent.com/u/40588715 
+
+- name: Rahul Bordoloi
+  title: Chapter Lead
+  email: rahulbordoloi24@gmail.com
+  avatar: null
+
+- name: Manab Deka
+  title: Chapter Lead
+  email: Manab Deka
+  avatar: null
+
+- name: Pratyush Bhatta
+  title: Planning Head
+  email: praityush@gmail.com
+  avatar: null
+
+- name: Jubli Barman
+  title: Event Manager
+  email: jubli221298@gmail.com
+  avatar: null
+
+- name: Harishmita Deka
+  title: Content Writer
+  email: harishmitadeka1996@gmail.com
+  avatar: null
+
+- name: Arif Alam
+  title: Designer
+  email: rokerzsa@gmail.com
+  avatar: null
+
+- name: Avinash Kumar
+  title: Designer
+  email: avinashbest3@gmail.com
+  avatar: null
+
+- name: Alfrid Adnan
+  title: Designer
+  email: alfridadnan@gmail.com
+  avatar: null
+
+- name: Neha Chetia
+  title: HR
+  email: nehachetia130@gmail.com
+  avatar: null
+
+- name: Navonaya Brahmachari
+  title: Marketing
+  email: navonaya@gmail.com
+  avatar: null
+
+- name: Sabina Akhtar
+  title: Marketing Intern
+  email: sabinaaktar8723@gmail.com
+  avatar: null
+
+- name: Shaima Siddiqua Laskar
+  title: Marketing Intern
+  email: shaimalaskar@gmail.com
+  avatar: null
+
+- name: Abdus S. Azad
+  title: Developer
+  email: mail@abdus.xyz
+  avatar: https://i.imgur.com/jCID0ZN.png
+
+- name: Aminur Alam
+  title: Developer
+  email: aminuralam0@gmail.com
+  avatar: null
+
+- name: Manashjyoti Boro
+  title: Web Dev Intern
+  email: manashjyoti533@gmail.com
+  avatar: https://avatars2.githubusercontent.com/u/57027184
+
+- name: Apeksha Manchanda
+  title: Web Dev Intern
+  email: manchanda.apeksha@gmail.com
+  avatar: null
+
+- name: Ankit Kumar Sinha
+  title: Web Dev Intern
+  email: ankit.nick15436@gmail.com
+  avatar: https://avatars3.githubusercontent.com/u/52502964
+
+- name: Abhishek kumar singh
+  title: Web Dev Intern
+  email: abhi953434@gmail.com
+  avatar: null
+
+- name: Aman
+  title: Web Dev Intern
+  email: aakashaman1770@gmail.com
+  avatar: https://avatars1.githubusercontent.com/u/65647302
+
+- name: Anup Mishra
+  title: "Mentor: Coding"
+  email: mishraanup089@gmail.com
+  avatar: null
+
+- name: Riyanka Chakroborty
+  title: "Mentor: Coding"
+  email: riyankamrg@gmail.com
+  avatar: null
+
+- name: Rinia Ahmed
+  title: "Mentor: Coding"
+  email: riniahmed20@gmail.com
+  avatar: https://avatars2.githubusercontent.com/u/40623211
+
+- name: Navomita Ghoshal
+  title: Intern
+  email: navomita.ghoshal@gmail.com
+  avatar: null
+
+- name: Borneel Bikash Phukan
+  title: "Mentor: Data Science"
+  email: borneelphukan@gmail.com
+  avatar: https://avatars3.githubusercontent.com/u/29285702
+
+- name: Akash Chetia
+  title: "Mentor: Data Science"
+  email: achetia037@gmail.com
+  avatar: null
+
+- name: Pranjit Gautam
+  title: "Mentor: Data Science"
+  email: pranjtgautam03012000@gmail.com
+  avatar: null
+
+- name: Nitin Choudhury
+  title: "Mentor: Ethical Hacking"
+  email: nitinnlb@gmail.com
+  avatar: https://avatars0.githubusercontent.com/u/57035073
+
+# maintain indentation

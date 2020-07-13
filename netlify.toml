@@ -2,6 +2,7 @@
 base = "."
 publish = "./public"
 command = "hugo --gc --minify --i18n-warnings"
+functions = "./functions"
 
 [context.production.environment]
 HUGO_VERSION = "0.71.1"
