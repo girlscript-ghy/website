@@ -58,7 +58,7 @@
 - name: Neha Chetia
   title: HR & Marketing Head
   email: nehachetia130@gmail.com
-  avatar: https://i.imgur.com/jR682mf.png
+  avatar: https://i.imgur.com/PVoXkq6.jpg
   about: null
 
 - name: Sabina Akhtar
@@ -161,6 +161,18 @@
   title: "Mentor: Ethical Hacking"
   email: nitinnlb@gmail.com
   avatar: https://avatars0.githubusercontent.com/u/57035073
+  about: null
+  
+- name: Saurav Barman
+  title: Campus Hero
+  email: sauravbarman39@gmail.com
+  avatar: https://i.imgur.com/dZq5Ub8.png
+  about: null
+  
+- name: Parijat Gogoi
+  title: Campus Hero
+  email: parijathogoi@gmail.com
+  avatar: https://i.imgur.com/Hmp01t8.jpg
   about: null
 
 # maintain indentation
