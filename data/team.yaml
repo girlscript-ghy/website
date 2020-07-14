@@ -148,7 +148,7 @@
 - name: Akash Chetia
   title: "Mentor: Data Science"
   email: achetia037@gmail.com
-  avatar: null
+  avatar: https://drive.google.com/file/d/1iDBg7yghXFKVrKVwFmR1VeSBdyCkI8Uh/view
   about: null
 
 - name: Pranjit Gautam
@@ -173,6 +173,12 @@
   title: Campus Hero
   email: parijathogoi@gmail.com
   avatar: https://i.imgur.com/Hmp01t8.jpg
+  about: null
+
+- name: Anannya Sarma
+  title: Campus Hero
+  email: sarmapriya7@gmail.com
+  avatar: https://i.imgur.com/kLroa6a.jpg
   about: null
 
 # maintain indentation
