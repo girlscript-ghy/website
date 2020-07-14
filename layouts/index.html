@@ -25,41 +25,17 @@
 <div id="events">
   <h2>Events</h2>
   <div class="card-wrapper">
+    {{ range (where .Site.RegularPages "Section" "events") }}
     <div>
-      <h3 class="card-title">Title</h3>
-      <span class="subtitle">SubTitle</span>
+      <h3 class="card-title">{{ .Title }}</h3>
+      <span class="subtitle">{{ .Date.Format "2 Jan, 2006 03:04PM" }}</span>
       <p>
-        Adipisicing aspernatur molestiae praesentium minus earum blanditiis
-        corporis in Obcaecati amet ratione adipisci quisquam animi? Vero debitis
-        magni est aperiam.
+        {{ .Content | plainify | truncate 150}}
       </p>
       <div class="flex-grow-1"></div>
-      <button class="btn text-only">Register Here</button>
+      <a href="{{ .Permalink }}" class="btn text-only">Register Here</a>
     </div>
-
-    <div>
-      <h3 class="card-title">Title</h3>
-      <span class="subtitle">SubTitle</span>
-      <p>
-        Lorem quae deserunt nostrum doloremque libero! Aliquam beatae laudantium
-        qui consequatur voluptate Debitis totam adipisci consequatur voluptates
-        expedita dolore. Eum.
-      </p>
-      <div class="flex-grow-1"></div>
-      <button class="btn text-only">Register Here</button>
-    </div>
-
-    <div>
-      <h3 class="card-title">Title</h3>
-      <span class="subtitle">SubTitle</span>
-      <p>
-        Elit iste amet blanditiis assumenda vitae. Quaerat id quidem esse
-        doloremque porro Iusto perferendis nisi recusandae perferendis amet
-        Repudiandae fugit
-      </p>
-      <div class="flex-grow-1"></div>
-      <button class="btn text-only">Register Here</button>
-    </div>
+    {{ end }}
   </div>
 </div>
 

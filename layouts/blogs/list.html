@@ -1,0 +1,33 @@
+{{ define "main" }}
+
+<style>
+  section#nav-wrapper {
+    position: sticky;
+    top: 0;
+    left: 0;
+  }
+</style>
+
+<div id="blog" class="page">
+  <h2>Blog</h2>
+
+  <div class="blog-wrapper">
+    <div class="content">
+      {{ range (where .Site.RegularPages "Section" "blogs") }}
+
+      <div>
+        <h3 class="blog-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+        <p style="opacity: 0.5;">
+          {{ .Summary | truncate 200 }}
+        </p>
+        <small>
+          {{ .Date.Format "06 Jan, 2006" }}
+        </small>
+      </div>
+      {{ end }}
+
+    </div>
+  </div>
+</div>
+
+{{ end }}
