@@ -11,15 +11,25 @@
 <div id="events" style="margin-bottom: 3rem;">
   <h2 style="margin: 2rem 0;">Events</h2>
   <div class="card-wrapper">
-      {{ range (where .Site.RegularPages "Section" "events") }}
-      <div style="font-size: 0.8em;">
-      <h3 class="card-title"> {{ .Title }}</h3>
+    {{ range (where .Site.RegularPages "Section" "events") }}
+    <div style="font-size: 0.8em;">
+      <h3 class="card-title">{{ .Title }}</h3>
       <span class="subtitle">{{ .Date.Format "2 Jan, 2006 03:04PM" }}</span>
+      <small class="status">
+        {{ if (time .Params.event_date).Before now }}
+        <span class="ended">ended</span>
+        {{ else }}
+        <span class="upcoming">upcoming</span>
+        {{ end }}
+      </small>
+
       <p>
-        {{ .Content | plainify | truncate 150 }}
+        {{ .Content | plainify | truncate 150}}
       </p>
       <div class="flex-grow-1"></div>
+      {{ if (time .Params.event_date).After now }}
       <a href="{{ .Permalink }}" class="btn text-only">Register Here</a>
+      {{ end }}
     </div>
     {{ end }}
   </div>
