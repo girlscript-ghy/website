@@ -69,6 +69,13 @@
     background-color: #155eac;
     color: #fff;
   }
+
+  .g-recaptcha {
+    width: 100%;
+    border-radius: 0.4rem;
+    border-right: 1px solid #d8d8d8;
+    overflow: hidden;
+  }
 </style>
 
 <div id="team">
@@ -76,7 +83,7 @@
 
   <form
     name="contact"
-    action="POST"
+    method="POST"
     data-netlify="true"
     id="contact-form"
     data-netlify-recaptcha="true"
@@ -95,6 +102,11 @@
       <small>Message</small>
       <textarea name="MESSAGE" rows="10"> </textarea>
     </label>
+
+    <div
+      style="max-width: 100%;text-align: center;"
+      data-netlify-recaptcha="true"
+    ></div>
 
     <button type="submit" class="btn outlined">SUBMIT</button>
   </form>
