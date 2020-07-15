@@ -316,12 +316,6 @@ header #blue-bg {
   align-items: center;
 }
 
-@media (max-width: 100px) {
-  #blog.page .content {
-    grid-template-columns: 1fr 1fr !important;
-  }
-}
-
 @media (max-width: 900px) {
   #blog .blog-wrapper {
     display: block;
@@ -329,10 +323,6 @@ header #blue-bg {
 
   #blog .graphics {
     display: none;
-  }
-
-  #blog.page .content {
-    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
@@ -401,6 +391,7 @@ header #blue-bg {
 #team .team-wrapper img {
   max-width: 80%;
   width: 100%;
+  border-radius: 0.4rem;
 }
 
 #team .team-wrapper small {

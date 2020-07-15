@@ -30,26 +30,19 @@ collections:
               widget: "string",
               required: false,
             }
-      - {
-          label: "Featured",
-          name: "featured",
-          widget: "boolean",
-          default: false,
-          required: false,
-        }
-      - {
-          label: "Table of contents",
-          name: "tableofcontents",
-          widget: "boolean",
-          default: true,
-          required: false,
-        }
       - { label: "Tags", name: "tags", widget: "list" }
       - { label: "Categories", name: "categories", widget: "list" }
+      - {
+          label: "Canonical URL (If you are syndicating post from Medium etc, provide post URL)",
+          name: "canonical",
+          widget: "text",
+          default: "null",
+          required: "false",
+        }
       - { label: "Body", name: "body", widget: "markdown" }
-  - name: "page"
-    label: "Pages"
-    folder: "content/pages"
+  - name: "blog"
+    label: "Blog"
+    folder: "content/blogs"
     create: true
     slug: "{{slug}}"
     editor:
@@ -71,11 +64,8 @@ collections:
               widget: "string",
               required: false,
             }
-      - {
-          label: "Table of contents",
-          name: "tableofcontents",
-          widget: "boolean",
-          default: true,
-          required: false,
-        }
+      - { label: "Tags", name: "tags", widget: "list" }
+      - { label: "Categories", name: "categories", widget: "list" }
+      - { label: "Google Form URL", name: "google_form_url", widget: "text", required: false }
       - { label: "Body", name: "body", widget: "markdown" }
+
