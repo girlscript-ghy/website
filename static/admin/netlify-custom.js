@@ -15,7 +15,7 @@ CMS.registerEditorComponent({
     };
   },
   toBlock: function(obj) {
-    return `{{<g_form_embed url="${obj.url}" }}`;
+    return `{{<g_form_embed url="${obj.url}" >}}`;
   },
   toPreview: function(obj) {
     return `<iframe src="${obj.url}?embedded=true" width="100%" height="1021" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>`;

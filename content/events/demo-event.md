@@ -6,4 +6,4 @@ draft: false
 ---
 A google form embed 
 
-{{<g_form_embed url="https://docs.google.com/forms/d/e/1FAIpQLScCeeJuDhBdZ27eh-UJ0FJ09Q-VjzCSrZu-KNgjpt1ZLwfgPA/viewform?usp=sf_link" }}
+{{<g_form_embed url="https://docs.google.com/forms/d/e/1FAIpQLScCeeJuDhBdZ27eh-UJ0FJ09Q-VjzCSrZu-KNgjpt1ZLwfgPA/viewform?usp=sf_link" >}}
