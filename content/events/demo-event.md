@@ -1,7 +1,7 @@
 ---
 title: Demo Event
 date: 2020-07-15T06:12:04.090Z
-event_date: 2020-07-15T06:12:04.121Z
+event_date: 2020-08-15T06:12:04.121Z
 draft: false
 ---
 A google form embed 

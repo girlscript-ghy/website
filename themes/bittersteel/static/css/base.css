@@ -180,8 +180,8 @@ header #blue-bg {
   display: flex;
   flex-direction: column;
   padding: 1rem;
-  /*border: 1px solid #cfe3fe;*/
   background: #fff;
+  position: relative;
   border-radius: 0.8rem;
   box-shadow: 0 1.5px 15.8px -15px rgba(0, 0, 0, 0.059),
     0 4.1px 31.2px -15px rgba(0, 0, 0, 0.085),
@@ -197,6 +197,32 @@ header #blue-bg {
 
 #events div.card-wrapper > div .subtitle {
   opacity: 0.5;
+}
+
+#events div.card-wrapper > div .status {
+  font-weight: bold;
+  font-size: 0.7em;
+  align-self: flex-start;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 0.5rem;
+  background: transparent;
+  text-transform: uppercase;
+}
+
+#events div.card-wrapper > div .upcoming {
+  color: #54ed3b;
+  border: 1px dotted #54ed3b;
+  border-radius: 0.3rem;
+  padding: 0.2rem;
+}
+
+#events div.card-wrapper > div .ended {
+  color: #ed3b3b;
+  border: 1px dotted #ed3b3b;
+  border-radius: 0.3rem;
+  padding: 0.2rem;
 }
 
 #events p {
