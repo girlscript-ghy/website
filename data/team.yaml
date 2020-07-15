@@ -1,22 +1,22 @@
 # when no `avatar` url provided, gravatar should be used.
 # gravatar url: https://gravatar.com/avatar/(md5 checksum of the email)
 
-- name: Eshita Nandy
-  title: Chief Community Manager (Chapter Lead)
-  email: nandyeshita4@gmail.com
-  avatar: https://avatars3.githubusercontent.com/u/40588715 
-  about: null
-
 - name: Rahul Bordoloi
   title: Chapter Lead
   email: rahulbordoloi24@gmail.com
-  avatar: null
+  avatar: https://i.imgur.com/uAkBMTK.png
   about: null
 
 - name: Manab Deka
   title: Chapter Lead
   email: Manab Deka
   avatar: https://i.imgur.com/hjIjOWE.jpg
+  about: null
+
+- name: Eshita Nandy
+  title: Chief Community Manager (Chapter Lead)
+  email: nandyeshita4@gmail.com
+  avatar: https://avatars3.githubusercontent.com/u/40588715
   about: null
 
 - name: Pratyush Bhatta
@@ -34,7 +34,7 @@
 - name: Harishmita Deka
   title: Content Writer
   email: harishmitadeka1996@gmail.com
-  avatar: null
+  avatar: https://i.imgur.com/GjmqU2U.jpg
   about: null
 
 - name: Arif Alam
@@ -162,13 +162,13 @@
   email: nitinnlb@gmail.com
   avatar: https://avatars0.githubusercontent.com/u/57035073
   about: null
-  
+
 - name: Saurav Barman
   title: Campus Hero
   email: sauravbarman39@gmail.com
   avatar: https://i.imgur.com/dZq5Ub8.png
   about: null
-  
+
 - name: Parijat Gogoi
   title: Campus Hero
   email: parijathogoi@gmail.com
